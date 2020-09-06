@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GHM - Assistência técnica e Desenvolvimento de sistemas</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -26,7 +27,7 @@
     <button onclick="topFunction()" id="toTop" title="Go to top"><img src="img/top.svg" alt=""></button>
     <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom shadow-sm w-100 position-absolute">
         <div class="container">
-            <span class="mb-0 h2 font-weight-bold font-italic">GHM</span>
+            <span class="mb-0 h2 font-weight-bold font-italic animate__animated animate__fadeIn">GHM</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,7 +76,7 @@
             <h1 class="display-4 text-center font-weight-bolder">Nossos serviços</h1>
             <hr class="p-3">
             <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
+                <div id="product-1" class="col mb-4">
                     <div class="card h-100">
                         <img src="img/1.png" class="card-img-top" alt="Assistência">
                         <div class="card-body">
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
+                <div id="product-2" class="col mb-4">
                     <div class="card h-100">
                         <img src="img/2.png" class="card-img-top" alt="Desenvolvimento">
                         <div class="card-body">
@@ -96,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col mb-4">
+                <div id="product-3" class="col mb-4">
                     <div class="card h-100">
                         <img src="img/3.png" class="card-img-top" alt="Edição">
                         <div class="card-body">
@@ -113,7 +114,7 @@
     <section id="members-section" class="bg-white pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div id="title-2" class="col">
                     <p class="display-4 text-center font-weight-bold">Membros da equipe</p>
                 </div>
             </div>
@@ -156,7 +157,9 @@
         <div class="container">
             <div class="row pt-5">
                 <div id="wedo-section" class="col-md-12 pt-5 text-center">
-                    <h2 id="title-2">O que fazemos?</h2>
+                    <div>
+                        <h2>O que fazemos?</h2>
+                    </div>
                     <hr>
                     <p id="description-1" class="mt-4 ml-3 h4 font-weight-light">
                         Nossa equipe é formada em montagem, manutenção, limpeza e otimização de Sistemas como
@@ -178,7 +181,7 @@
                 </div>
                 <div class="col-md-8 text-center d-flex justify-content-center align-items-center">
                     <p class="h1 font-weight-light text-center">
-                        Fazemos manutenção de computadores, montagem, troca de peças e etc.
+                        Fazemos manutenção de computadores, montagem, troca de peças, formatação, backup de dados e etc.
                     </p>
                 </div>
             </div>
@@ -186,7 +189,7 @@
             <div id="info-2" class="row pt-5 pb-5">
                 <div class="col-md-8 text-center d-flex justify-content-center align-items-center">
                     <p class="h1 font-weight-light text-center">
-                        Fazemos também limpeza e organização de seus componentes, de modo que fique mais apresentável!
+                        Fazemos também limpeza e organização de seus componentes para que fique apresentável e dentro dos padrões!
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
@@ -237,19 +240,19 @@
     </section>
 
 
-    <footer class="page-footer font-small blue pt-5 bg-white">
+    <footer class="page-footer font-small blue pt-5 bg-white text-secondary">
 
         <div class="container-fluid d-flex justify-content-center align-items-center text-center text-md-left">
             <div class="row container">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">GHM</h5>
+                    <h5 class="text-uppercase text-dark">GHM</h5>
                     <p class="font-italic">Assistência, design e desenvolvimento</p>
                 </div>
 
                 <hr class="clearfix w-100 d-md-none pb-3">
 
                 <div class="col-md-6 mb-md-0 mb-3 text-right">
-                    <h5 class="text-uppercase">Redes sociais</h5>
+                    <h5 class="text-uppercase text-dark">Redes sociais</h5>
                     <ul class="list-unstyled">
                         <!--<li>
                             <a target="_blank" href="https://discord.gg/ReYSDN2">Discord</a>
