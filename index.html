@@ -8,74 +8,275 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-dark">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow position-fixed w-100">
-        <a class="navbar-brand" href="">
-            <img src="" width="70" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center font-italic" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Início<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+<body class="bg-white">
+    <button onclick="topFunction()" id="toTop" title="Go to top"><img src="img/top.svg" alt=""></button>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom shadow-sm w-100 position-absolute">
+        <div class="container">
+            <span class="mb-0 h2 font-weight-bold font-italic">GHM</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center font-italic justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav animate__animated animate__bounceInDown animate__fast">
+                    <a class="nav-item nav-link active" href="#">Início<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#services-section">Nossos serviços</a>
+                    <a class="nav-item nav-link" href="#members-section">Membros</a>
+                    <a class="nav-item nav-link" href="#wedo-section">O que fazemos?</a>
+                </div>
             </div>
         </div>
     </nav>
-    <header class="main-header"></header>
-    <section class="bg-light pt-5 pb-5">
+
+    <section id="social-section" class="bg-white vh-100 p-5">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+            <div class="row h-100">
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center h-75">
+                    <p
+                        class="display-1 font-weight-bold text-center animate__animated animate__fadeIn animate__faster text-light text-shadow">
+                        GHM</p>
+                    <p
+                        class="font-italic text-center animate__animated animate__fadeIn animate__fast text-light text-shadow">
+                        Assistência,
+                        design e desenvolvimento</p>
+                </div>
+                <div class="col-md-12 d-flex flex-row justify-content-center align-items-center h-25">
+                    <a target="_blank" class="social-buttom shadow rounded-circle border"
+                        href="https://discord.gg/ReYSDN2"><img src="img/discord.svg" alt=""></a>
+                    <a target="_blank" class="social-buttom shadow rounded-circle border"
+                        href="https://www.instagram.com/ghmtechnologies/"><img src="img/instagram.svg" alt=""></a>
+                    <a target="_blank" class="social-buttom shadow rounded-circle border"
+                        href="https://www.facebook.com/ghmtechnologies"><img src="img/facebook.svg" alt=""></a>
+                    <a target="_blank" class="social-buttom shadow rounded-circle border"
+                        href="mailto:contato.ghmgroup@gmail.com?subject=Solicitar%20servi%C3%A7o"><img
+                            src="img/gmail.svg" alt=""></a>
+                    <a target="_blank" class="social-buttom shadow rounded-circle border"
+                        href="https://api.whatsapp.com/send?phone=5566992441702"><img src="img/whatsapp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services-section" class="bg-light pt-5 pb-5">
         <div class="container">
-            <h1 class="text-center">Membros da Equipe</h1>
-            <hr class="mb-5">
+            <h1 class="display-4 text-center font-weight-bolder">Nossos serviços</h1>
+            <hr class="p-3">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="img/1.png" class="card-img-top" alt="Assistência">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Assistência técnica</h5>
+                            <p class="card-text text-justify">Fazemos manutenção de computadores em geral; limpeza e
+                                organização de seus componentes; montagem de Setup.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="img/2.png" class="card-img-top" alt="Desenvolvimento">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Desenvolvimento web/mobile</h5>
+                            <p class="card-text text-justify">Fazemos desenvolvimento de servidores FiveM;
+                                desenvolvimento de websites e aplicativos mobile utilizando as melhores tecnologias
+                                atuais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="img/3.png" class="card-img-top" alt="Edição">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Criação de animações, logos e banners</h5>
+                            <p class="card-text text-justify">Fazemos templates para stream, construção de logos
+                                personalizadas e animações para vídeos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="members-section" class="bg-white pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="display-4 text-center font-weight-bold">Membros da equipe</p>
+                </div>
+            </div>
             <div class="row p-4 rounded">
-                <div class="col-md-4 text-center mb-4">
+                <div id="profile-1" class="col-md-4 text-center mb-4">
                     <img src="https://instagram.fbpg1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/88374776_882353248852142_3581879596741558272_n.jpg?_nc_ht=instagram.fbpg1-1.fna.fbcdn.net&_nc_ohc=rn0KJcuF-MAAX_ucL9G&oh=97b1fb97496a6142d966042012e29e3a&oe=5F65E353"
-                        class="card-img-top rounded-circle w-75" alt="Guilherme Ferreira">
+                        class="card-img-top img-fluid rounded-circle w-75" alt="Guilherme Ferreira">
                     <div class="card-body text-center">
                         <h3 class="card-title text-center">Guilherme Ferreira</h3>
                         <a target="_blank" class="text-decoration-none"
                             href="https://www.instagram.com/guilherme.gft/">@guilherme.gft</a>
+                        <p class="text-secondary font-italic">Técnico em Informática</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center mb-4">
+                <div id="profile-2" class="col-md-4 text-center mb-4">
                     <img src="https://instagram.fbpg1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/116426694_341239310234206_2553212875046372637_n.jpg?_nc_ht=instagram.fbpg1-1.fna.fbcdn.net&_nc_ohc=Q2sbTah6xWcAX8LQbbF&oh=3aae153ed8588b5c718ae9af63d4753c&oe=5F62CA34"
-                        class="card-img-top rounded-circle w-75" alt="Hércules Câmara">
+                        class="card-img-top img-fluid rounded-circle w-75" alt="Hércules Câmara">
                     <div class="card-body text-center">
                         <h3 class="card-title text-center">Hércules Câmara</h3>
                         <a target="_blank" class="text-decoration-none"
                             href="https://www.instagram.com/herculescamara_/">@herculescamara_</a>
+                        <p class="text-secondary font-italic">Técnico em Informática</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center mb-4">
+                <div id="profile-3" class="col-md-4 text-center mb-4">
                     <img src="https://scontent.fbpg1-1.fna.fbcdn.net/v/t1.0-1/c0.7.200.200a/p200x200/61474313_2084308521692166_3759568660134363136_n.jpg?_nc_cat=108&_nc_sid=7206a8&_nc_ohc=RTpt_J7Dj20AX95PksV&_nc_ht=scontent.fbpg1-1.fna&oh=0e0deda26e7f39e4caf8651348f31249&oe=5F61C859"
-                        class="card-img-top rounded-circle w-75" alt="Marcivon Filho">
+                        class="card-img-top img-fluid rounded-circle w-75" alt="Marcivon Filho">
                     <div class="card-body text-center">
                         <h3 class="card-title text-center">Marcivon Filho</h3>
                         <a target="_blank" class="text-decoration-none"
                             href="https://www.instagram.com/marcivon_filho/">@marcivon_filho</a>
+                        <p class="text-secondary font-italic">Técnico em Informática</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section class="section bg-light pt-5 pb-5 text-dark mb-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div id="wedo-section" class="col-md-12 pt-5 text-center">
+                    <h2 id="title-2">O que fazemos?</h2>
+                    <hr>
+                    <p id="description-1" class="mt-4 ml-3 h4 font-weight-light">
+                        Nossa equipe é formada em montagem, manutenção, limpeza e otimização de Sistemas como
+                        computadores de mesa (desktop) e notebooks. Além disso, caso solicitado, montaremos o computador
+                        que se enquadre com o perfil do usuário, que seja capaz de atender as suas necessidades.
+                    </p>
+                </div>
+            </div>
+
+            <div id="info-1" class="row pt-5 pb-5">
+                <div class="col-md-4 text-center">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/pc.png" class="d-block w-100" alt="computador">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 text-center d-flex justify-content-center align-items-center">
+                    <p class="h1 font-weight-light text-center">
+                        Fazemos manutenção de computadores, montagem, troca de peças e etc.
+                    </p>
+                </div>
+            </div>
+
+            <div id="info-2" class="row pt-5 pb-5">
+                <div class="col-md-8 text-center d-flex justify-content-center align-items-center">
+                    <p class="h1 font-weight-light text-center">
+                        Fazemos também limpeza e organização de seus componentes, de modo que fique mais apresentável!
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div id="carouselExampleSlidesOnly2" class="carousel carousel-fade slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/pc3.jpeg" class="d-block w-100" alt="computador">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="info-3" class="row pt-5">
+                <div class="col-md-4 text-center">
+                    <div id="carouselExampleSlidesOnly2" class="carousel carousel-fade slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/dev.jpeg" class="d-block w-100" alt="computador">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 text-center d-flex justify-content-center align-items-center">
+                    <p class="h1 font-weight-light text-center">
+                        Desenvolvemos sistemas web (websites) e utilizamos a mesma tecnologia para desenvolvimento de
+                        aplicações mobile.
+                    </p>
+                </div>
+            </div>
+            <div id="info-4" class="row pt-5">
+                <div class="col-md-8 text-center d-flex justify-content-center align-items-center">
+                    <p class="h1 font-weight-light text-center">
+                        Criamos logos e animações para serem usadas em diversas plataformas e redes sociais
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div id="carouselExampleSlidesOnly2" class="carousel carousel-fade slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/logo.png" class="d-block w-100" alt="computador">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <footer class="page-footer font-small blue pt-5 bg-white">
+
+        <div class="container-fluid d-flex justify-content-center align-items-center text-center text-md-left">
+            <div class="row container">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">GHM</h5>
+                    <p class="font-italic">Assistência, design e desenvolvimento</p>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-6 mb-md-0 mb-3 text-right">
+                    <h5 class="text-uppercase">Redes sociais</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a target="_blank" href="https://discord.gg/ReYSDN2">Discord</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/ghmtechnologies/">Instagram</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/ghmtechnologies">Facebook</a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="mailto:contato.ghmgroup@gmail.com?subject=Solicitar%20servi%C3%A7o">Gmail</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5566992441702">Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3 bg-light border-top">© 2020 Copyright
+            <a href="https://mdbootstrap.com/"> GHM Technologies</a>
+        </div>
+
+    </footer>
     <script src="js/config.js"></script>
 </body>
 
